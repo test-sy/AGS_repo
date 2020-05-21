@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class SatgeGenerater : MonoBehaviour
 {
-    const int StageTipSize = 30;
-
+    const int StageTipSize = 10;
+    
     int currentTipIndex;
 
     public Transform character;
@@ -42,7 +42,7 @@ public class SatgeGenerater : MonoBehaviour
             generatedStageList.Add(stageObject);
         }
 
-        while (generatedStageList.Count > preInstantiate + 2) DestroyOldestStage();
+        while (generatedStageList.Count > preInstantiate + 5) DestroyOldestStage();
 
         currentTipIndex = toTipIndex;
     }
