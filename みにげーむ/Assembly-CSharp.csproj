@@ -72,6 +72,7 @@
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\script\Action1Main.cs" />
     <Compile Include="Assets\script\Main.cs" />
+    <Compile Include="Assets\script\PlayerScore.cs" />
     <Compile Include="Assets\script\SatgeGenerater.cs" />
     <Compile Include="Assets\UnityChan\Scripts\AutoBlink.cs" />
     <Compile Include="Assets\UnityChan\Scripts\CameraController.cs" />
