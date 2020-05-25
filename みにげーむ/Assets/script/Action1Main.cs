@@ -11,13 +11,18 @@ public class Action1Main : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        int score = CalcScore();
-        scoreLabel.text = "Score:" + score + "m";
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        int score = CalcScore();
+        scoreLabel.text = "Score:" + score + "m";
+    }
+
+    int CalcScore()
+    {
+        return (int)charcter.transform.position.y;
     }
 }
