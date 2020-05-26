@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class PlayerScore : MonoBehaviour
 {
-    Action1Main score;
-    public Transform charcter;
 
     // Start is called before the first frame update
     void Start()
@@ -16,11 +14,6 @@ public class PlayerScore : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int highescore;
-
-        if()
-        {
-
-        }
+       
     }
 }
