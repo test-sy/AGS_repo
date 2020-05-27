@@ -2,39 +2,48 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Action1Main : MonoBehaviour
 {
     public Transform charcter;
     public Text scoreLabel;
     public Text highScore;
-    public int timeCount = 0;
+    private string highScoreKey = "highScore";
+    public GameObject gameOver;
     // Start is called before the first frame update
     void Start()
     {
-
+        highScore.text = "HighScore:" + PlayerPrefs.GetInt("HighScore") + "m";
+        gameOver.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        timeCount++;
         int score = CalcScore();
-        int highscore = 0;
-        if (highscore <= score || timeCount >= 100)
-        {
-            highscore = score;
-            highScore.text = "HighScore:" + highscore + "m";
-            timeCount = 0;
-        }
            
         scoreLabel.text = "Score:" + score + "m";
-        
-        
+
+        if(charcter.transform.position.y >= 10)
+        {
+            enabled = false;
+            if(PlayerPrefs.GetInt("HighScore")<score)
+            {
+                PlayerPrefs.SetInt("HighScore", score);
+                gameOver.SetActive(true);
+                Invoke("ReturnToTitle", 2.0f);
+            }
+        }
     }
 
     int CalcScore()
     {
         return (int)charcter.transform.position.y;
+    }
+
+    void ReturnToTitle()
+    {
+        SceneManager.LoadScene("Action1title");
     }
 }

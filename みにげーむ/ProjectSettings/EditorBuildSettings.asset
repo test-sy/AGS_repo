@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Action1title.unity
+    guid: 0eb36d8c8e18c774686bbab7d2f1681b
+  - enabled: 1
+    path: Assets/Scenes/JumptoSpace.unity
+    guid: 1bce48aadf2fa384c8a0cdd612a2d3b8
   m_configObjects: {}
