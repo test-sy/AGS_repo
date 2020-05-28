@@ -25,15 +25,16 @@ public class Action1Main : MonoBehaviour
            
         scoreLabel.text = "Score:" + score + "m";
 
-        if(charcter.transform.position.y >= 10)
+        if((int)charcter.transform.position.y <= 0)
         {
             enabled = false;
             if(PlayerPrefs.GetInt("HighScore")<score)
             {
                 PlayerPrefs.SetInt("HighScore", score);
-                gameOver.SetActive(true);
-                Invoke("ReturnToTitle", 2.0f);
             }
+            gameOver.SetActive(true);
+
+            Invoke("ReturnToTitle", 2.0f);
         }
     }
 
