@@ -60,6 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AurynSky\Gems Ultimate Pack\Scripts\AnimationScript.cs" />
     <Compile Include="Assets\FurnishedCabin\Scripts\MoveableObject.cs" />
     <Compile Include="Assets\FurnishedCabin\Scripts\MoveObjectController.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
@@ -74,6 +75,7 @@
     <Compile Include="Assets\script\Action1TitleCon.cs" />
     <Compile Include="Assets\script\Action2Main.cs" />
     <Compile Include="Assets\script\Action2TitleCon.cs" />
+    <Compile Include="Assets\script\ItemGenerater.cs" />
     <Compile Include="Assets\script\Main.cs" />
     <Compile Include="Assets\script\SatgeGenerater.cs" />
     <Compile Include="Assets\UnityChan\Scripts\AutoBlink.cs" />
@@ -120,6 +122,7 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\AurynSky\Gems Ultimate Pack\READ ME.txt" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/yakumo robin/Google ドライブ/GitHub/AGS_repo/みにげーむ/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
