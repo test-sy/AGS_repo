@@ -16816,7 +16816,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad4d15b37ac4e604bb9d69613e510f41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemPrefab: {fileID: 0}
+  itemPrefab: {fileID: 1950871307682000, guid: 01348926c7cbb3347a006c37204131c3, type: 3}
   minTime: 2
   maxTime: 5
   xMinPosition: -130
